@@ -7,8 +7,8 @@ highest. Unfortunately, the code is not working correctly. Help them fix it!
 
 function multiplesOfSeven(num) {
   let arr = [];
-  for (let i = num; i > 0; i--) {
-    if (i % 7 === 1) {
+  for (let i = 1; i < num; i++) {
+    if (i % 7 === 0) {
       arr.push(i);
     }
   }

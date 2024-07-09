@@ -8,7 +8,19 @@ If the operation is invalid, return the string "Invalid Operation".
 */
 
 function operate(num1, num2, operation) {
-  // Your code here 
+  switch (operation) {
+    case 'greater than':
+      return num1 > num2;
+    case 'less than':
+      return num1 < num2;
+    case 'equal to':
+      return num1 === num2;
+    case 'not equal to':
+      return num1 !== num2;
+    default:
+      return "Invalid Operation";
+
+  }
 }
 
 // operate(456, 123, 'greater than'); // true

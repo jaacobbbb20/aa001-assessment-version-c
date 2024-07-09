@@ -12,11 +12,14 @@ highestProduct function to solve the problem.
 */
 
 function getProduct(nums) {
-  // Your code here 
+  return nums.reduce((product, num) => product * num, 1);
 }
 
 function highestProduct(numsList) {
-  // Your code here 
+  if (numsList.length === 0) {
+    return -1;
+  }
+
 }
 
 // const arrayA = [1, 2, 3, 4, 5];
